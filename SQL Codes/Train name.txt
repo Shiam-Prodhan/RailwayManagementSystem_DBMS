@@ -1,0 +1,9 @@
+TR701	Subarna Express
+TR703	Godhuli Express
+TR704	Provati Express
+TR709	Parabat Express
+TR739	Upaban Express
+TR705	Ekota Express	
+TR757	Drutajan Express
+TR771	Rangpur Express
+TR765	Nilsagor Express 

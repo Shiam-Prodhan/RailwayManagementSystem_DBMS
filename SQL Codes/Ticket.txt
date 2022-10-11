@@ -1,0 +1,21 @@
+INSERT INTO `ticket` (`Ticket-ID`, `TR-ID`, `StationFrom`, `StationTo`, `Date`, `Purchase Time`, `Price`) VALUES 
+('T01', 'TR757', 'Barishal', 'Biman Bandar', '2019-12-06', '23:57', '350'), 
+('T02', 'TR705', 'Biman Bandar', 'Chilahati', '2019-12-07', '22:20', '495'), 
+('T03', 'TR703', 'Chilahati', 'Chittagong', '2019-12-08', '12:10', '390'), 
+('T04', 'TR765', 'Chuadanga', 'Darshana', '2019-12-09', '14:30', '150'), 
+('T05', 'TR709', 'Darshana', 'Dinajpur', '2019-12-11', '16:50', '250'), 
+('T06', 'TR704', 'Dinajpur', 'Jessore', '2019-12-11', '17:45', '365'), 
+('T07', 'TR771', 'Ranpur', 'Kamlapur', '2019-12-25', '07:30', '480'), 
+('T08', 'TR701', 'Biman Bandar', 'Panchagar', '2019-12-25', '07:30', '369'), 
+('T09', 'TR701', 'Biman Bandar', 'Panchagar', '2019-12-19', '07:33', '369'), 
+('T10', 'TR739', 'Panchagar', 'Tongi', '2019-12-04', '09:30', '390')
+
+
+
+
+UPDATE `passenger` SET `Date`='2019-12-06',`PurchaseTime`='23:57';
+UPDATE `passenger` SET `Date`='2019-12-07',`PurchaseTime`='22:20';
+UPDATE `passenger` SET `Date`='2019-12-06',`PurchaseTime`='12:10';
+UPDATE `passenger` SET `Date`='2019-12-08',`PurchaseTime`='16:50';
+UPDATE `passenger` SET `Date`='2019-12-25',`PurchaseTime`='07:30';
+

@@ -1,0 +1,46 @@
+Passenger:
+
+SELECT `passenger`.`P-Name`,`passenger`.`P-Contact`,`train`.`T-Name`,`ticket`.`Ticket-ID`,`train`.`Arrival`,train.Departure,
+ticket.StationFrom,ticket.StationTo,ticket.Price,passenger.Date from ticket JOIN passenger on `passenger`.`P_TicketID`= `ticket`.`Ticket-ID`
+JOIN train on `ticket`.`TR-ID`=`train`.`T-ID`
+
+specific: 
+SELECT `passenger`.`P-Name`,`passenger`.`P-Contact`,`train`.`T-Name`,`ticket`.`Ticket-ID`,`train`.`Arrival`,train.Departure,
+ticket.StationFrom,ticket.StationTo,ticket.Price,passenger.Date from ticket JOIN passenger on `passenger`.`P_TicketID`= `ticket`.`Ticket-ID`
+JOIN train on `ticket`.`TR-ID`=`train`.`T-ID` where `train`.`T-ID`='TR757'
+
+online ticket:
+SELECT `user`.`User_ID`,user.User_name FROM user JOIN ticket WHERE `user`.`User_ID`='ON3053'
+
+**Collecion
+
+SELECT passenger.TrainID,passenger.P_TicketID,price as `Daywise Collection` FROM passenger
+
+specific:
+SELECT passenger.TrainID,passenger.P_TicketID,price as `Daywise Collection` FROM passenger WHERE passenger.Date='25July19'
+
+
+**sum
+
+select SUM(price) from passenger WHERE passenger.Date='25July19'
+
+
+**count
+select COUNT(price) as `Number of ticket` from passenger WHERE passenger.Date='25July19'
+
+**Maintainance
+
+SELECT `train`.`T-Name`,`train`.`T-ID`,maintainance.`Last Modification`,maintainance.Cost,`maintainance`.`Next Check Up` from train JOIN
+maintainance on maintainance.`M-TR_ID`=`train`.`T-ID`
+
+
+** Railway condition
+select * from railcondition
+
+**Employee Info
+SELECT employee.`Emp-Name`,employee.`Emp-ID`,`employee`.`Emp-Type`,`employee_salary`.`Amount` from employee JOIN employee_salary ON `employee`.`Emp-ID`=`employee_salary`.`E_Emp-ID`
+
+specific employee:
+SELECT employee.`Emp-Name`,employee.`Emp-ID`,`employee`.`Emp-Type`,`employee_salary`.`Amount`,`employee_salary`.`Salary Date` from employee JOIN employee_salary ON 
+`employee`.`Emp-ID`=`employee_salary`.`E_Emp-ID` WHERE employee.`Emp-ID`='ADM5533'
+

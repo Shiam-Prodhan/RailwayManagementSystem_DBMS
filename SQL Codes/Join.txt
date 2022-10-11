@@ -1,0 +1,19 @@
+SELECT `ticket`.`Ticket-ID`,`ticket`.`TR-ID`,`train`.`T-Name`,`train`.`Arrival`,`train`.`Departure`,ticket.StationFrom,ticket.StationTo,ticket.Date,passenger.`P-Name`,`passenger`.`P-Contact`
+FROM ticket JOIN passenger ON `ticket`.`Ticket-ID`=`passenger`.`P_TicketID`JOIN train ON `train`.`T-ID`=`ticket`.`TR-ID`
+
+SELECT `employee`.`Emp-Name`,employee.`Emp-Type`, `employee salary`.`E_Emp-ID`,`employee salary`.`Amount`,`employee salary`.`Salary Date` FROM administration JOIN `employee` ON `administration`.`EmployeeInfo` =`employee`.`Emp-ID` JOIN `employee salary` ON `employee salary`.`E_Emp-ID`=employee.`Emp-ID`WHERE administration.EmployeeInfo='ADM5533'
+
+SELECT `train`.`T-Name`,`train`.`T-ID`,`maintainance`.`Last Modification`,`maintainance`.`Cost`,`maintainance`.`Next Check Up`FROM maintainance JOIN train ON `train`.`T-ID`=`maintainance`.`M-TR_ID`
+
+SELECT `passenger`.`P-Name`,`passenger`.`P-Contact`,`ticket`.`Ticket-ID`,train.`T-Name`,train.Arrival,train.Departure,ticket.StationFrom,ticket.StationTo,ticket.Date,ticket.`Purchase Time`,ticket.Price AS TicketPrice FROM
+passenger JOIN ticket ON passenger.P_TicketID = `ticket`.`Ticket-ID` JOIN train ON `ticket`.`TR-ID` =`train`.`T-ID` WHERE `ticket`.`Ticket-ID`='Ekota01'
+
+SELECT `passenger`.`P-Name`,`passenger`.`P-Contact`,`ticket`.`Ticket-ID`,train.`T-Name`,train.Arrival,train.Departure,ticket.StationFrom,ticket.StationTo,ticket.Date,ticket.`Purchase Time`,ticket.Price AS TicketPrice 
+FROM passenger JOIN ticket ON passenger.P_TicketID = `ticket`.`Ticket-ID` JOIN train ON `ticket`.`TR-ID` =`train`.`T-ID`WHERE `train`.`T-ID`='TR757'
+
+
+ADMIN:
+INSERT INTO `administration` (`Ticket_id`, `Train_ID`, `PassengerInfo`, `MaintainanceInfo`, `EmployeeInfo`) VALUES ('Drutojan01', NULL, NULL, NULL, NULL), ('Ekota01', NULL, NULL, NULL, NULL), ('Godhuli01', NULL, NULL, NULL, NULL), ('Nilsagor01', NULL, NULL, NULL, NULL), ('Parabat01', NULL, NULL, NULL, NULL), ('Provati01', NULL, NULL, NULL, NULL);
+INSERT INTO `administration` (`Ticket_id`, `Train_ID`, `PassengerInfo`, `MaintainanceInfo`, `EmployeeInfo`) VALUES (NULL, 'TR757', NULL, NULL, NULL), (NULL, 'TR705', NULL, NULL, NULL), (NULL, 'TR703', NULL, NULL, NULL), (NULL, 'TR765', NULL, NULL, NULL), (NULL, 'TR709', NULL, NULL, NULL), (NULL, 'TR704', NULL, NULL, NULL), (NULL, 'TR771', NULL, NULL, NULL), (NULL, 'TR701', NULL, NULL, NULL), (NULL, 'TR739', NULL, NULL, NULL);
+INSERT INTO `administration` (`Ticket_id`, `Train_ID`, `MaintainanceInfo`, `EmployeeInfo`) VALUES (NULL, NULL, 'TR709', NULL), (NULL, NULL, 'TR739', NULL), (NULL, NULL, 'TR765', NULL), (NULL, NULL, 'TR771', NULL);
+INSERT INTO `administration` (`Ticket_id`, `Train_ID`, `MaintainanceInfo`, `EmployeeInfo`) VALUES (NULL, NULL, NULL, 'ADM5533'), (NULL, NULL, NULL, 'TT2255'), (NULL, NULL, NULL, 'ADM8800'), (NULL, NULL, NULL, 'LM5050'), (NULL, NULL, NULL, 'EN6969'), (NULL, NULL, NULL, 'TT6699'), (NULL, NULL, NULL, 'ADM1122'), (NULL, NULL, NULL, 'SM1124'), (NULL, NULL, NULL, 'CL0044'), (NULL, NULL, NULL, 'LM1133');

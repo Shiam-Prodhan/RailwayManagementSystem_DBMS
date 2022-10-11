@@ -1,0 +1,1 @@
+INSERT INTO `location` (`StationName`) VALUES ('Jessore'), ('Shantahar'), ('Darshana'), ('Chuadanga'), ('Tangail'), ('Biman Bandar'), ('Kamlapur'), ('Tongi'), ('Sylhet'), ('Rajshahi'), ('Barishal'), ('Chittagong'), ('Pabna'), ('Chilahati'), ('Ranpur'), ('Dinajpur'), ('Saidpur'), ('Panchagar'), ('Khulna'), ('Mymensingh')

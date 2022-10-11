@@ -1,0 +1,1 @@
+INSERT INTO `passenger` (`P-Name`, `P-Contact`, `TrainID`, `P_TicketID`) VALUES ('John', '01744650142', 'TR757', 'T01'), ('Smith', '0155336699', 'TR757', 'T11'), ('Micheal', '990356647', 'TR705', 'T02'), ('Manik', '0176969358', 'TR703', 'T03'), (' Alim', '0185369426', 'TR739', 'T10')

@@ -1,0 +1,13 @@
+INSERT INTO `employee` (`Emp-Name`, `Emp-ID`, `Emp-Type`) VALUES ('Shiam', 'ADM-1122', 'Admin'), ('Diip', 'ADM-8800', 'Admin'), ('Afraim', 'ADM-5533', 'Admin'), ('Shormi', 'SM-1124', 'Station Master'), ('Sifat', 'CL-0044', 'Cleaner'), ('Sara', 'TT-2255', 'T.T.E'), ('Sakib', 'TT-6699', 'T.T.E'), ('Remon', 'LM-5050', 'Loco Master'), ('Sumon', 'LM-1133', 'Loco Master'), ('Ridom', 'EN-6969', 'Engineer')
+
+Emp ID:
+ADM-1122
+ADM-5533
+ADM-8800
+CL-0044
+EN-6969
+LM-1133
+LM-5050
+SM-1124
+TT-2255
+TT-6699
